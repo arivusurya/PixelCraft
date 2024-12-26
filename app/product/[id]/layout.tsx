@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
 import Nav from "@/components/frontend/Nav";
-import { CartProvider } from "@/hooks/cart.hooks";
+// import { CartProvider } from "@/hooks/cart.hooks";
 // import { ProductProvider } from "@/hooks/producthook";
 import Footer from "@/components/frontend/Footer";
 
@@ -18,13 +18,13 @@ export default function ProductLayout({
   return (
     <>
       <Nav />
-      <CartProvider>
-        {/* <ProductProvider> */}
-        {children}
-        <Footer />
-        <Toaster />
-        {/* </ProductProvider> */}
-      </CartProvider>
+      {/* <CartProvider> */}
+      {/* <ProductProvider> */}
+      {children}
+      <Footer />
+      <Toaster />
+      {/* </ProductProvider> */}
+      {/* </CartProvider> */}
     </>
   );
 }

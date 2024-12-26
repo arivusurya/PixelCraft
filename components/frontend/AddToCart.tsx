@@ -8,7 +8,7 @@ export function AddToCartButton({
   const { addProduct } = useCart();
 
   const handleAddToCart = () => {
-    addProduct({ ...product, quantity: 1 });
+    // addProduct({ ...product, quantity: 1 });
   };
 
   return (
