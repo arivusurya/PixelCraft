@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAdminProducts } from "@/hooks/Admin.hook";
-import Loading from "@/app/admin/loding";
+// import Loading from "@/app/admin/loding";
 import { Trash2Icon } from "lucide-react";
 import Image from "next/image";
 import {
@@ -23,7 +23,7 @@ function ShowAdminProducts({ onEditProduct }: Props) {
   const [selectedProduct, setSelectedProduct] = useState(null); // State for selected product
   const [open, setOpen] = useState(false);
 
-  if (isLoading) return <Loading />;
+  // if (isLoading) return <Loading />;
   if (error) return <div>Error: {error}</div>;
 
   const handleEditClick = (product: any) => {
@@ -76,7 +76,7 @@ function ShowAdminProducts({ onEditProduct }: Props) {
       <DialogDemo
         open={open}
         change={() => setOpen(false)}
-        product={selectedProduct}
+        // product={selectedProduct}
       />
     </div>
   );
