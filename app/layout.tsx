@@ -98,7 +98,7 @@ export default function RootLayout({
       </head>
       <body className="bg-white">
         <CartProvider>
-          <SecurityWrapper>
+          {/* <SecurityWrapper> */}
             {/* <ProductProvider> */}
             {/* <SessionProvider> */}
             {children}
@@ -115,7 +115,7 @@ export default function RootLayout({
             </p>
             {/* </SessionProvider> */}
             {/* </ProductProvider> */}
-          </SecurityWrapper>
+          {/* </SecurityWrapper> */}
         </CartProvider>
         <Toaster />
       </body>
